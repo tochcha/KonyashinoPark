@@ -1,0 +1,279 @@
+//main styles
+.main-wrapper {
+	padding: 0;
+	min-width: $min-width;
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+	min-height: 100%;
+}
+
+.wrapper {
+	min-width: $min-width;
+	max-width: $max-width;
+	padding: 0 15px 0 15px;
+	margin: 0 auto;
+	position: relative;
+}
+
+
+/* titles */
+
+p {
+	padding: 0 0 15px;
+}
+
+h1 {
+	font-family: $custom-font-family;
+	font-size: $font-size-h1;
+	line-height: $line-height-h1;
+	padding: 0 0 15px;
+	font-weight: 700;
+}
+
+h2 {
+	font-family: $custom-font-family;
+	font-size: $font-size-h2;
+	line-height: $line-height-h2;
+	padding: 0 0 15px;
+	font-weight: 700;
+}
+
+h3 {
+	font-family: $custom-font-family;
+	font-size: $font-size-h3;
+	line-height: $line-height-h3;
+	padding: 0 0 15px;
+	font-weight: 700;
+}
+
+h4,
+h5,
+h6 {
+	font-weight: 700;
+	padding: 0 0 15px;
+}
+
+.custom2 {
+	font-family: $custom2-font-family;
+}
+
+/* Styles for dialog window */
+
+.small-popup {
+    background: #fff;
+    padding: 20px 30px;
+    text-align: left;
+    max-width: 400px;
+    margin: 40px auto;
+    position: relative;
+}
+
+.mfp-with-zoom .mfp-container,
+.mfp-with-zoom.mfp-bg {
+    opacity: 0;
+    -webkit-backface-visibility: hidden;
+    /* ideally, transition speed should match zoom duration */
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+.mfp-with-zoom.mfp-ready .mfp-container {
+    opacity: 1;
+}
+
+.mfp-with-zoom.mfp-ready.mfp-bg {
+    opacity: 0.8;
+}
+
+.mfp-with-zoom.mfp-removing .mfp-container,
+.mfp-with-zoom.mfp-removing.mfp-bg {
+    opacity: 0;
+}
+
+
+/* Styles for dialog window end */
+
+.mm-opened .mm-slideout {
+    cursor: pointer;
+}
+
+.mm-title img {
+    height: 20px;
+}
+
+.slick-arrow {
+    position: absolute;
+    top: 32%;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+	width: 24px;
+	height: 24px;
+	z-index: 3;
+    &.slick-prev {
+        left: 10px;
+    }
+    &.slick-next {
+        right: 10px;
+    }
+}
+
+.mm-page,
+#my-page {
+    height: 100%;
+}
+
+.icon {
+    display: inline-block;
+}
+
+/* loader */
+
+.loaded .main-wrapper {
+	visibility: hidden;
+}
+
+.icon-load {
+	/*background: url(../img/loader.svg) no-repeat left top;*/
+	width: 100px;
+	height: 100px;
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	display: none;
+	img {
+		width: 100%;
+		height: 100%;
+	}
+}
+
+.loaded .icon-load {
+	display: block;
+}
+
+.hidden-block {
+	display: none;
+}
+
+.sticky-holder {
+	position: relative;
+	z-index: 99;
+	padding: 18px 0 14px;
+	transition: .2s;
+	&.fup {
+		transform: translateY(-90px);
+	}
+	&.fixed {
+		position: fixed;
+		width: 100%;
+		top: 0;
+		left: 0;
+		background-color: $link-color;
+		transform: translateY(0);
+	}
+}
+
+.box-tab-cont {
+	position: relative;
+	z-index: 2;
+	overflow: hidden;
+}
+
+.tab-cont {
+	transition: .2s;
+	max-height: 400px;
+}
+
+.hide-tab {
+	max-height: 0;
+	overflow: hidden;
+	z-index: -1;
+	opacity: 0;
+	visibility: hidden;
+	transform: translateY(-40px);
+	position: relative;
+}
+
+.crop-block {
+	padding: 22px;
+	border: 1px solid #f00;
+	margin: 22px;
+}
+
+//main styles end
+
+
+/*
+================================================================================
+|                                     HEADER                                   |
+================================================================================
+*/
+
+.header {
+	background: #f0f0f0;
+	width: 100%;
+	min-width: $min-width;
+	text-align: left;
+	order: 1;
+	-webkit-order: 1;
+}
+
+
+
+/*
+================================================================================
+|                                     HEADER  END                              |
+================================================================================
+*/
+
+
+/*
+================================================================================
+|                                     CONTENT                                 |
+================================================================================
+*/
+
+.content {
+	min-width: $min-width;
+	text-align: left;
+	width: 100%;
+	order: 2;
+	-webkit-order: 2;
+	flex-grow: 1;
+	-webkit-flex-grow: 1;
+	background: #83f494;
+}
+
+/*
+================================================================================
+|                                     CONTENT END                              |
+================================================================================
+*/
+
+
+/*
+================================================================================
+|                                     FOOTER                                   |
+================================================================================
+*/
+
+.footer {
+	background: #ff0;
+	height: 80px;
+	text-align: left;
+	width: 100%;
+	min-width: $min-width;
+	order: 3;
+	-webkit-order: 3;
+}
+
+
+/*
+================================================================================
+|                                     FOOTER END                               |
+================================================================================
+*/
