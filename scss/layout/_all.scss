@@ -23,6 +23,7 @@ p {
 	padding: 0 0 15px;
 }
 
+.h1,
 h1 {
 	font-family: $custom-font-family;
 	font-size: $font-size-h1;
@@ -31,6 +32,7 @@ h1 {
 	font-weight: 700;
 }
 
+.h2,
 h2 {
 	font-family: $custom-font-family;
 	font-size: $font-size-h2;
@@ -39,6 +41,7 @@ h2 {
 	font-weight: 700;
 }
 
+.h3,
 h3 {
 	font-family: $custom-font-family;
 	font-size: $font-size-h3;
@@ -214,12 +217,13 @@ h6 {
 */
 
 .header {
-	background: #f0f0f0;
 	width: 100%;
 	min-width: $min-width;
 	text-align: left;
 	order: 1;
 	-webkit-order: 1;
+	height: 590px;
+	background: url(../img/header-bg.jpg) no-repeat center;
 }
 
 
@@ -245,7 +249,6 @@ h6 {
 	-webkit-order: 2;
 	flex-grow: 1;
 	-webkit-flex-grow: 1;
-	background: #83f494;
 }
 
 /*

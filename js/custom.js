@@ -104,53 +104,6 @@ function viewport() {
 
 
 
-$(function () {
-	/* placeholder*/
-	$('input, textarea').each(function () {
-		var placeholder = $(this).attr('placeholder');
-		$(this).focus(function () {
-			$(this).attr('placeholder', '');
-		});
-		$(this).focusout(function () {
-			$(this).attr('placeholder', placeholder);
-		});
-	});
-	/* placeholder*/
-
-	$('.button-nav').click(function () {
-		$(this).toggleClass('active'),
-			$('.main-nav-list').slideToggle();
-		return false;
-	});
-
-	/* components */
-
-	/* 
-		FormStyler описание тут http://dimox.name/jquery-form-styler/ https://dimox.github.io/jQueryFormStyler/demo/ 
-		плагин работает для всего, только стили  надо задавать (для селекта и инпут намбер их, например не видно)
-	*/
-	if ($('.styled').length) {
-		$('.styled').styler();
-	};
-
-	/*
-	if($('.scroll').length) {
-		$(".scroll").mCustomScrollbar({
-			axis:"x",
-			theme:"dark-thin",
-			autoExpandScrollbar:true,
-			advanced:{autoExpandHorizontalScroll:true}
-		});
-	};
-	
-	*/
-
-	/* components */
-
-
-
-});
-
 var handler = function () {
 
 	var height_footer = $('footer').height();
@@ -197,61 +150,21 @@ if ($('.main-slider').length) {
 	});
 };
 
-// mmenu - меню по клику, выезжающее сбоку, сверху, снизу.... (описание тут http://mmenu.frebsite.nl/)
-$("#my-menu").mmenu({
-	extensions: [
-		/*'fx-menu-slide',
-		'fx-panels-zoom',*/
-		'shadow-page',
-		'shadow-panels',
-		'listview-large',
-		'pagedim-black'
-	],
-	"navbars": [{
-		"position": "bottom",
-		"content": [
-			"searchfield"
-		]
-	}],
-	navbar: {
-		title: '<img src="img/logo-black.png" alt="" />'
-	},
-	offCanvas: {
-		position: 'left'
-	},
-	pageScroll: true,
-	slidingSubmenus: true
-});
-
-//   Get the API
-var api = $("#my-menu").data("mmenu");
-
-//   Hook into methods
-api.bind("open:finish", function () {
-	$('.mm-opened .hamburger').addClass('is-active');
-});
-api.bind("close:finish", function () {
-	$('.hamburger').removeClass('is-active');
-});
 
 
 
 // плавная прокрутка вниз к якорю
-/*$(".header nav ul li a").click(function () {
+$(".header nav ul li a").click(function () {
 	var elementClick = $(this).attr("href")
 	var destination = $(elementClick).offset().top;
 	jQuery("html:not(:animated),body:not(:animated)").animate({scrollTop: destination}, 800);
 	return false;
-});*/
+});
 
-// меняем стрелку на гамбургер при клике на область контента
-/*    $(".mm-slideout").click(function() {
-		$('.mm-opened .hamburger').removeClass('is-active');
-	});*/
 
 
 // тень от меню при прокрутке страницы больше чем 355px (можно делать липкий хедер)
-$(window).scroll(function () {
+/*$(window).scroll(function () {
 	if ($(this).scrollTop() > 355) {
 		$('.sticky-holder').addClass('fixed');
 	} else {
@@ -262,48 +175,9 @@ $(window).scroll(function () {
 	} else {
 		$('.sticky-holder').removeClass('fup');
 	}
-});
+});*/
 
-// подмена картинок для Retina дисплеев
-/*if ('devicePixelRatio' in window && window.devicePixelRatio == 2) {
-	var img_to_replace = jQuery('img.replace-2x').get();
-	for (var i = 0, l = img_to_replace.length; i < l; i++) {
-		var src = img_to_replace[i].src;
-		src = src.replace(/\.(png|jpg|gif)+$/i, '@2x.png.$1');
-		img_to_replace[i].src = src;
-	};
-}*/
 
-// открывающаяся навигация по клику
-$(function () {
-	$('#indikat ul').hide();
-	$('#indikat li.current ul').show();
-	$('#indikat li').has('ul').bind('click', function () {
-		$('#indikat li').not(this).children('ul').slideUp(200); // если не надо скрывать подменю по клику на другое, то эту строку можно закомментировать
-		$(this).children('ul').slideToggle(200);
-		return false;
-	});
-});
-
-// Если нужно свернуть/развернуть блок с заменой текста в кнопке
-$(".js-toggle").toggle(function () {
-	$(this).parents('.help').find('.hidden-block').slideDown();
-	$(this).text("Свернуть");
-}, function () {
-	$(this).parents('.help').find('.hidden-block').slideUp();
-	$(this).text("Развернуть");
-});
-
-/* tabs*/
-$('.tabs li a').click(function () {
-	$(this).parents('.tab-wrap').find('.tab-cont').addClass('hide-tab');
-	$(this).parent().siblings().removeClass('active');
-	var id = $(this).attr('href');
-	$(id).removeClass('hide-tab');
-	$(this).parent().addClass('active');
-	return false;
-});
-/* tabs*/
 
 // Если нужно при адаптации вырезать блок и вставит в другое место 
 if ($(window).width() < 768) {

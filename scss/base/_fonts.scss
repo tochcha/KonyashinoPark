@@ -14,39 +14,41 @@ bolder - Изменяет начертание относительно насы
 
 
 @font-face {
-    font-family: 'OpenSans';
-    src: url('../fonts/OpenSansRegular.eot');
-    src: url('../fonts/OpenSansRegular.eot') format('embedded-opentype'),
-         url('../fonts/OpenSansRegular.woff2') format('woff2'),
-         url('../fonts/OpenSansRegular.woff') format('woff'),
-         url('../fonts/OpenSansRegular.ttf') format('truetype'),
-         url('../fonts/OpenSansRegular.svg#OpenSansRegular') format('svg');
+    font-family: 'FuturaPTDemi';
+    src: url('../fonts/FuturaPTDemi.eot');
+    src: url('../fonts/FuturaPTDemi.eot') format('embedded-opentype'),
+         url('../fonts/FuturaPTDemi.woff2') format('woff2'),
+         url('../fonts/FuturaPTDemi.woff') format('woff'),
+         url('../fonts/FuturaPTDemi.ttf') format('truetype'),
+         url('../fonts/FuturaPTDemi.svg#FuturaPTDemi') format('svg');
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-    font-family: 'OpenSans';
-    src: url('../fonts/OpenSansSemibold.eot');
-    src: url('../fonts/OpenSansSemibold.eot') format('embedded-opentype'),
-         url('../fonts/OpenSansSemibold.woff2') format('woff2'),
-         url('../fonts/OpenSansSemibold.woff') format('woff'),
-         url('../fonts/OpenSansSemibold.ttf') format('truetype'),
-         url('../fonts/OpenSansSemibold.svg#OpenSansSemibold') format('svg');
-  font-weight: 600;
+    font-family: 'CenturyGothic';
+    src: url('../fonts/11528.eot');
+    src: url('../fonts/11528.eot') format('embedded-opentype'),
+         url('../fonts/11528.woff2') format('woff2'),
+         url('../fonts/11528.woff') format('woff'),
+         url('../fonts/11528.ttf') format('truetype'),
+         url('../fonts/11528.svg#11528') format('svg');
+  font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-    font-family: 'OpenSans';
-    src: url('../fonts/OpenSansBold.eot');
-    src: url('../fonts/OpenSansBold.eot') format('embedded-opentype'),
-         url('../fonts/OpenSansBold.woff2') format('woff2'),
-         url('../fonts/OpenSansBold.woff') format('woff'),
-         url('../fonts/OpenSansBold.ttf') format('truetype'),
-         url('../fonts/OpenSansBold.svg#OpenSansBold') format('svg');
+    font-family: 'CenturyGothic';
+    src: url('fonts/8483.eot');
+    src: url('fonts/8483.eot') format('embedded-opentype'),
+         url('fonts/8483.woff2') format('woff2'),
+         url('fonts/8483.woff') format('woff'),
+         url('fonts/8483.ttf') format('truetype'),
+         url('fonts/8483.svg#8483') format('svg');
   font-weight: 700;
   font-style: normal;
 }
+
+
 
 
