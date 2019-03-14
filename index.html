@@ -22,43 +22,390 @@
 		<div class="main-wrapper">
 
 			<header id="my-header" class="header">
-				<div class="wrapper">
-					<div class="logo">
-						<a href="#"><img src="img/logo.png" alt=""></a>
-					</div>
-					<p>тут попробуем</p>
-					<div class="arrow-left">qwerty</div><i class="icon arrow-left"></i>
-					<a id="my-button" class="hamburger hamburger--squeeze" href="#my-menu">
-						<span class="hamburger-box">
-							<span class="hamburger-inner"></span>
-						</span>
-					</a>
-				</div>
-				<div class="after-block"></div>
-			</header>
-			<div class="sticky-holder">
-				<div class="sticky">Это липкий хедер</div>
-			</div>
-
-			<main id="my-content" class="content">
 				<div class="container">
-					<div class="row">
-						<div class="col-md-12">
-							<h1>Это h1 Open Sans Tochcha</h1>
-							<h2>Это h2 Open Sans</h2>
-							<h2 class="custom2">Это h2 Open Sans но .custom2</h2>
-							<p>Это параграф Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia ut doloribus, neque, blanditiis sunt itaque adipisci debitis earum sed veniam unde vel numquam cupiditate soluta architecto corrupti nulla qui consequatur.</p>
-							<h3>Если нужно свернуть/развернуть блок с заменой текста в кнопке h3</h3>
-							<div class="help">
-								<div class="js-toggle"><a href="#">Развернуть</a></div>
-								<div class="hidden-block">
-									это мы будем либо сворачивать, либо разворачивать
+					<div class="row header__top">
+						<div class="col-sm-6">
+							<div class="phone"><a href="tel:+7(495)2223344" class="link-phone">+7 (495) 222 33 44</a></div>
+						</div>
+						<div class="col-sm-6">
+							<div class="logo">
+								<a href="/"><img src="img/logo.png" alt=""></a>
+							</div>
+						</div>
+					</div>
+					<div class="row header__middle">
+						<div class="col-md-6">
+							<div class="old">
+								<div class="header__middle-title">
+									<div class="title">Продолжить жить <br>по старому?</div>
 								</div>
+								<div class="buttonbox"><a href="#intro" class="button inverse">Жить по старому</a></div>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="new">
+								<div class="header__middle-title">
+									<div class="title">Или жить по-новому?</div>
+								</div>
+								<div class="buttonbox"><a href="#intro" class="button">Жить по-новому</a></div>
 							</div>
 						</div>
 					</div>
 				</div>
-				<div class="crop-block">Этот блок будет вырезан и вставлен в хедер при ширине экрана менее 768рх</div>
+			</header>
+			<div id="main-nav" class="sticky-holder">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<ul>
+								<li><a href="#benefits">Преимущества</a></li>
+								<li><a href="#chars">Характеристики</a></li>
+								<li><a href="#gallery">Галерея</a></li>
+								<li><a href="#genplan">Генплан</a></li>
+								<li><a href="#contacts">Контакты</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<main id="my-content" class="content">
+				<section id="intro" class="intro">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-12">
+								<h2 class="h1">Пора жить по-новому!</h2>
+							</div>
+							<div class="col-md-1"></div>
+							<div class="col-md-10">
+								<div class="intro__text">
+									<p>Готовый коттеджный посёлок <strong>“Коняшино парк”</strong> в Раменском районе Московской области. Таунхаусы с видом на лесопарк в часе езды от Москвы.</p>
+								</div>
+							</div>
+							<div class="col-md-1"></div>
+						</div>
+					</div>
+					<div class="onmap">&nbsp;</div>
+				</section>
+				<section id="benefits" class="reasons">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-2"></div>
+							<div class="col-md-8">
+								<h2><span>5 причин, по которым</span> <span>Вам захочется переехать сюда</span></h2>
+							</div>
+							<div class="col-md-2"></div>
+						</div>
+						<div class="row">
+							<div class="col-md-12">
+								<p>Коттеджных посёлков масса. Но Коняшино Парк — это не просто коттеджный посёлок. <br>Это место, в которое хочется приезжать снова и снова, или остаться жить здесь навсегда.</p>
+							</div>
+						</div>
+						<div class="row reasons__list">
+							<div class="col-md-4">
+								<div class="img-box"><img src="img/reason-1.png" alt=""></div>
+								<div class="title"><h4>Экология</h4></div>
+								<div class="text">Посёлок располагается в глубине лесопаркового массива на берегу реки Карповки. По данным Мосэкомониторинга (замер 2017 года) состояние воздуха на территории посёлка оценивается как «отличное», состояние почв оценивается как «без загрязнений». Почвы содержат уникальный известняк, который обеззараживает воду без вреда для здоровья.</div>
+							</div>
+							<div class="col-md-4">
+								<div class="img-box"><img src="img/reason-2.png" alt=""></div>
+								<div class="title"><h4>Транспортная доступность</h4></div>
+								<div class="text">На подъезде к посёлку и внутри него проложена ровная асфальтовая дорога. Время движения от Москвы – 50 минут на автомобиле по Егорьевскому шоссе или 1 полнометражный фильм от Казанского вокзала до платформы «55-й км» (<span>в 5 минутах</span> ходьбы от посёлка).</div>
+							</div>
+							<div class="col-md-4">
+								<div class="img-box"><img src="img/reason-3.png" alt=""></div>
+								<div class="title"><h4>Безопасность</h4></div>
+								<div class="text">Каждую улицу коттеджного посёлка закрывают автоматические ворота. При этом, на въезде в сам посёлок нет КПП, что не затрудняет въезд в него. Посёлок предусматривает свободную систему защиты от посторонних лиц на частке, и не ограничивает Вас в установке заборов, видеонаблюдения и т. д.</div>
+							</div>
+							<div class="col-md-2"></div>
+							<div class="col-md-4">
+								<div class="img-box"><img src="img/reason-4.png" alt=""></div>
+								<div class="title"><h4>Необременённость</h4></div>
+								<div class="text">Коняшино Парк не обременено типичными для коттеджных посёлков выплатами по его содержанию, в т. ч. по охране, вывозу мусора, очистке от снега и т. д. Решение об оплате услуг принимается жителями коллективно или в обровольном порядке.</div>
+							</div>
+							<div class="col-md-4">
+								<div class="img-box"><img src="img/reason-5.png" alt=""></div>
+								<div class="title"><h4>Свобода</h4></div>
+								<div class="text">Свобода от суеты: посёлок находится в тихом и уютном месте. Свобода выбора: участки с домами и без. Свобода вдохновения: дома имеют свободную планировку.</div>
+							</div>
+							<div class="col-md-2"></div>
+						</div>
+					</div>
+				</section>
+				<section class="free">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-12">
+								<h2 class="h1">Освободитесь от суеты и проблем города</h2>
+								<div class="subtitle">Чем заняться в своём уютном уголке?</div>
+							</div>
+						</div>
+					</div>
+					<ul class="places">
+						<li>
+							<div class="img-box"><img src="img/place-1.jpg" alt=""></div>
+							<div class="texts">
+								<div class="title">Конные прогулки</div>
+								<p> Рядом с посёлком есть <br>конно-спортивная база.</p>
+							</div>
+						</li>
+						<li>
+							<div class="img-box"><img src="img/place-2.jpg" alt=""></div>
+							<div class="texts">
+								<div class="title">Зимний отдых</div>
+								<p>Близлежащий лесной массив отлично <br>подходит для катания на лыжах!</p>
+							</div>
+						</li>
+						<li>
+							<div class="img-box"><img src="img/place-3.jpg" alt=""></div>
+							<div class="texts">
+								<div class="title">Летний отдых</div>
+								<p>Недалеко расположены песчаные <br>карьеры с кристально чистой водой.</p>
+							</div>
+						</li>
+						<li>
+							<div class="img-box"><img src="img/place-4.jpg" alt=""></div>
+							<div class="texts">
+								<div class="title">Рыбалка</div>
+								<p>Для любителей «тихой охоты» прямо <br>у посёлка есть река и пруды.</p>
+							</div>
+						</li>
+						<li>
+							<div class="img-box"><img src="img/place-5.jpg" alt=""></div>
+							<div class="texts">
+								<div class="title">Барбекю</div>
+								<p>Делайте шашлык или барбекю <br>на своём участке круглый год!</p>
+							</div>
+						</li>
+						<li>
+							<div class="img-box"><img src="img/place-6.jpg" alt=""></div>
+							<div class="texts">
+								<div class="title">Лесной отдых</div>
+								<p>Грибы, ягоды, иван-чай – всё, <br>чем богат русский лес!</p>
+							</div>
+						</li>
+					</ul>
+				</section>
+				<section class="signup">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-12">
+								<p>Запах шашлыка, смешанный с запахом хвои. Хрустящий снег или пение птиц. Тишина, нарушаемая лишь ветром. Всё это станет Вашим совсем скоро. Достаточно записаться на бесплатный и ни к чему не обязывающий просмотр.</p>
+							</div>
+						</div>
+						<form action="#">
+							<div class="row">
+								<div class="col"><input type="text" placeholder="ФИО:"></div>
+								<div class="col"><input type="text" placeholder="Телефон:"></div>
+								<div class="col">
+									<input type="submit" value="Записаться">
+									<div class="rem"><img src="img/lock.svg" alt=""> Ваши данные будут храниться <br>в конфиденциальности</div>
+								</div>
+							</div>
+						</form>
+					</div>
+				</section>
+				<section id="chars" class="chars">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-12">
+								<h2 class="h1">Для тех, кто подходит к комфорту практично</h2>
+								<div class="subtitle">Точные характеристики Вашего будущего места отдыха</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-7">
+								<div class="chars-left">
+									<div class="chars-left__img"><img src="img/chars-img.jpg" alt=""></div>
+									<div class="chars-left__info">
+										<div class="chars-left__info_row"><b>5 млн руб</b> - стоимость дома с участком</div>
+										<div class="chars-left__info_row"><b>5,5 млн руб</b> - стоимость дома с участком <br>и коммуникациями «под ключ»</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-5">
+								<div class="chars-right">
+									<h5>Общие параметры</h5>
+									<ul class="params">
+										<li>
+											<div class="params__name"><span>Площадь дома</span></div>
+											<div class="params__qty">151 м2</div>
+										</li>
+										<li>
+											<div class="params__name"><span>Количество этажей</span></div>
+											<div class="params__qty">2</div>
+										</li>
+										<li>
+											<div class="params__name"><span>Площадь первого этажа</span></div>
+											<div class="params__qty">75,5</div>
+										</li>
+										<li>
+											<div class="params__name"><span>Площадь второго этажа</span></div>
+											<div class="params__qty">75,5</div>
+										</li>
+										<li>
+											<div class="params__name"><span>Площадь участка</span></div>
+											<div class="params__qty">15 соток</div>
+										</li>
+										<li>
+											<div class="params__name"><span>Почва</span></div>
+											<div class="params__qty">песчаная, без грунтовых вод и заболоченности</div>
+										</li>
+										<li>
+											<div class="params__name"><span>Коммуникации</span></div>
+											<div class="params__qty">газ по границе, водопровод (скважинный), отопление, электричество, 15 кВт 220/380</div>
+										</li>
+									</ul>
+									<h5>Параметры домов</h5>
+									<ul class="params">
+										<li>
+											<div class="params__name"><span>Фундамент</span></div>
+											<div class="params__qty">монолитная плита 320 мм</div>
+										</li>
+										<li>
+											<div class="params__name"><span>Тип домов</span></div>
+											<div class="params__qty">по единому индивидуальному проекту</div>
+										</li>
+										<li>
+											<div class="params__name"><span>Наличие отделки</span></div>
+											<div class="params__qty">с черновой отделкой</div>
+										</li>
+										<li>
+											<div class="params__name"><span>Материал стен</span></div>
+											<div class="params__qty">пеноблок Bonolit</div>
+										</li>
+										<li>
+											<div class="params__name"><span>Перекрытия</span></div>
+											<div class="params__qty">плиты ЖБИ</div>
+										</li>
+										<li>
+											<div class="params__name"><span>Материал кровли</span></div>
+											<div class="params__qty">металлочерепица Grand Line необогреваемая</div>
+										</li>
+										<li>
+											<div class="params__name"><span>Внутренние перегородки</span></div>
+											<div class="params__qty">нет</div>
+										</li>
+										<li>
+											<div class="params__name"><span>Высота потолков</span></div>
+											<div class="params__qty">3 м</div>
+										</li>
+										<li>
+											<div class="params__name"><span>Планировка</span></div>
+											<div class="params__qty">свободная</div>
+										</li>
+									</ul>
+									<h5>Юридические параметры</h5>
+									<ul class="params">
+										<li>
+											<div class="params__name"><span>Собственность</span></div>
+											<div class="params__qty">полное владение</div>
+										</li>
+										<li>
+											<div class="params__name"><span>Тип застройки</span></div>
+											<div class="params__qty">ИЖС от застройщика</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section id="gallery" class="gallery">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-12">
+								<h2 class="h1">Фотографии посёлка</h2>
+								<div class="tab-wrap">
+									<ul class="nav-tab-list tabs">
+										<li class="nav-tab-list__item active">
+											<a href="#tab_1" class="nav-tab-list__link">Коттеджи</a>
+										</li>
+										<li class="nav-tab-list__item">
+											<a href="#tab_2" class="nav-tab-list__link">Природа</a>
+										</li>
+										<li class="nav-tab-list__item">
+											<a href="#tab_3" class="nav-tab-list__link">Строительство</a>
+										</li>
+										<li class="nav-tab-list__item">
+											<a href="#tab_4" class="nav-tab-list__link">Участки</a>
+										</li>
+										<li class="nav-tab-list__item">
+											<a href="#tab_5" class="nav-tab-list__link">Инфраструктура</a>
+										</li>
+									</ul>
+									<div class="box-tab-cont">
+										<div class="tab-cont zoom-gallery" id="tab_1">
+											<div class="slider">
+												<div class="slider-1">
+													<div><a href="img/img-1.jpg" title="Описание картинки"><img src="img/img-1.jpg" alt=""></a></div>
+													<div><a href="img/img-2.jpg" title="Описание картинки"><img src="img/img-2.jpg" alt=""></a></div>
+													<div><a href="img/img-3.jpg" title="Описание картинки"><img src="img/img-3.jpg" alt=""></a></div>
+													<div><a href="img/img-4.jpg" title="Описание картинки"><img src="img/img-4.jpg" alt=""></a></div>
+													<div><a href="img/img-5.jpg" title="Описание картинки"><img src="img/img-5.jpg" alt=""></a></div>
+													<div><a href="img/img-6.jpg" title="Описание картинки"><img src="img/img-6.jpg" alt=""></a></div>
+													<div><a href="img/img-7.jpg" title="Описание картинки"><img src="img/img-7.jpg" alt=""></a></div>
+												</div>
+											</div>
+										</div>
+										<div class="tab-cont hide-tab" id="tab_2">
+											<div class="slider">
+												<div class="slider-1">
+													<div><a href="img/img-6.jpg" title="Описание картинки"><img src="img/img-6.jpg" alt=""></a></div>
+													<div><a href="img/img-1.jpg" title="Описание картинки"><img src="img/img-1.jpg" alt=""></a></div>
+													<div><a href="img/img-3.jpg" title="Описание картинки"><img src="img/img-3.jpg" alt=""></a></div>
+													<div><a href="img/img-4.jpg" title="Описание картинки"><img src="img/img-4.jpg" alt=""></a></div>
+													<div><a href="img/img-2.jpg" title="Описание картинки"><img src="img/img-2.jpg" alt=""></a></div>
+													<div><a href="img/img-5.jpg" title="Описание картинки"><img src="img/img-5.jpg" alt=""></a></div>
+													<div><a href="img/img-7.jpg" title="Описание картинки"><img src="img/img-7.jpg" alt=""></a></div>
+												</div>
+											</div>
+										</div>
+										<div class="tab-cont hide-tab" id="tab_3">
+											<div class="slider">
+												<div class="slider-1">
+													<div><a href="img/img-7.jpg" title="Описание картинки"><img src="img/img-7.jpg" alt=""></a></div>
+													<div><a href="img/img-1.jpg" title="Описание картинки"><img src="img/img-1.jpg" alt=""></a></div>
+													<div><a href="img/img-6.jpg" title="Описание картинки"><img src="img/img-6.jpg" alt=""></a></div>
+													<div><a href="img/img-3.jpg" title="Описание картинки"><img src="img/img-3.jpg" alt=""></a></div>
+													<div><a href="img/img-4.jpg" title="Описание картинки"><img src="img/img-4.jpg" alt=""></a></div>
+													<div><a href="img/img-5.jpg" title="Описание картинки"><img src="img/img-5.jpg" alt=""></a></div>
+													<div><a href="img/img-2.jpg" title="Описание картинки"><img src="img/img-2.jpg" alt=""></a></div>
+												</div>
+											</div>
+										</div>
+										<div class="tab-cont hide-tab" id="tab_4">
+											<div class="slider">
+												<div class="slider-1">
+													<div><a href="img/img-3.jpg" title="Описание картинки"><img src="img/img-3.jpg" alt=""></a></div>
+													<div><a href="img/img-1.jpg" title="Описание картинки"><img src="img/img-1.jpg" alt=""></a></div>
+													<div><a href="img/img-4.jpg" title="Описание картинки"><img src="img/img-4.jpg" alt=""></a></div>
+													<div><a href="img/img-5.jpg" title="Описание картинки"><img src="img/img-5.jpg" alt=""></a></div>
+													<div><a href="img/img-6.jpg" title="Описание картинки"><img src="img/img-6.jpg" alt=""></a></div>
+													<div><a href="img/img-2.jpg" title="Описание картинки"><img src="img/img-2.jpg" alt=""></a></div>
+													<div><a href="img/img-7.jpg" title="Описание картинки"><img src="img/img-7.jpg" alt=""></a></div>
+												</div>
+											</div>
+										</div>
+										<div class="tab-cont hide-tab" id="tab_5">
+											<div class="slider">
+												<div class="slider-1">
+													<div><a href="img/img-3.jpg" title="Описание картинки"><img src="img/img-3.jpg" alt=""></a></div>
+													<div><a href="img/img-4.jpg" title="Описание картинки"><img src="img/img-4.jpg" alt=""></a></div>
+													<div><a href="img/img-2.jpg" title="Описание картинки"><img src="img/img-2.jpg" alt=""></a></div>
+													<div><a href="img/img-5.jpg" title="Описание картинки"><img src="img/img-5.jpg" alt=""></a></div>
+													<div><a href="img/img-1.jpg" title="Описание картинки"><img src="img/img-1.jpg" alt=""></a></div>
+													<div><a href="img/img-6.jpg" title="Описание картинки"><img src="img/img-6.jpg" alt=""></a></div>
+													<div><a href="img/img-7.jpg" title="Описание картинки"><img src="img/img-7.jpg" alt=""></a></div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
 			</main>
 
 			<footer id="my-footer" class="footer">
@@ -78,8 +425,8 @@
 	<script src="js/components/css3-animate-it.js"></script>
 	<script src="js/components/jquery.mmenu.all.min.js"></script>
 	<script src="js/components/jquery.formstyler.js"></script>
-	<script src="js/components/slick.min.js"></script>
 	<script src="js/components/jquery.mCustomScrollbar.js"></script>-->
+	<script src="js/components/slick.min.js"></script>
 	<script src="js/components/jquery.magnific-popup.min.js"></script>
 	<script src="js/components/required_fields.js"></script>
 	<!--

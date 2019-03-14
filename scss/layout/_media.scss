@@ -1,3 +1,38 @@
+@media only screen and (max-width : 1819px) {
+	.places .title {
+		font-size: 22px;
+	}
+
+	.places .texts {
+		top: 73%;
+	}
+
+	.places p {
+		br {
+			display: none;
+		}
+	}
+}
+
+@media only screen and (max-width : 1579px) {
+	.places .texts {
+		top: 71%;
+	}
+}
+
+@media only screen and (max-width : 1439px) {
+	.places {
+		p {
+			font-size: 13px;
+			line-height: 17px;
+		}
+	}
+
+	.places .title {
+		font-size: 19px;
+	}
+}
+
 @media only screen and (min-width : 1200px) {
 	.container {
 		max-width: 1200px;
@@ -7,7 +42,45 @@
 
 /* <=1199 */
 @media only screen and (max-width : 1199px) {
-    
+	.places {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-content: stretch;
+		align-items: stretch;
+
+		li {
+			display: block;
+			order: 0;
+			flex: 1 1 auto;
+			align-self: auto;
+			width: 33.3333333333%;
+			border-bottom: 1px solid #fff;
+		}
+
+		.texts {
+			position: absolute;
+			width: 100%;
+			left: 0;
+			top: 81%;
+		}
+
+		.title {
+			text-transform: uppercase;
+			font: 26px 'FuturaPTDemi', sans-serif;
+			padding-bottom: 6px;
+		}
+
+		p {
+			font: 15px/22px 'CenturyGothic', sans-serif;
+			padding-left: 5px;
+			padding-right: 5px;
+			br {
+				display: block;
+			}
+		}
+	}
 }
 
 /* <=1199 end */
@@ -18,9 +91,7 @@
 /* <=991 end */
 
 /* <=767 */
-@media only screen and (max-width : 767px) {
-    
-}
+@media only screen and (max-width : 767px) {}
 
 /* <=767 end */
 
@@ -31,9 +102,9 @@
 
 /* <=479 */
 @media only screen and (max-width : 479px) {
-    html {
-        font-size: 80%;
-    }
+	html {
+		font-size: 80%;
+	}
 }
 
 /* <=479 end */
@@ -44,15 +115,15 @@
 only screen and (-moz-min-device-pixel-ratio: 1.5),
 only screen and (-o-min-device-pixel-ratio: 3/2),
 only screen and (min-device-pixel-ratio: 1.5) {
-    .retina {
-        background-image: url(example@2x.png);
-    }
+	.retina {
+		background-image: url(example@2x.png);
+	}
 }
 
 /* Портретная ориентация шаблона */
 @media screen and (orientation:portrait) {
-    .cloud-zoom-wrapper img.cloudzoom {
-        height: auto;
-        display: inline;
-    }
+	.cloud-zoom-wrapper img.cloudzoom {
+		height: auto;
+		display: inline;
+	}
 }

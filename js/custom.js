@@ -17,7 +17,7 @@ $('.zoom-gallery').magnificPopup({
 	image: {
 		verticalFit: true,
 		titleSrc: function (item) {
-			return item.el.attr('title') + ' &middot; <a class="image-source-link" href="' + item.el.attr('data-source') + '" target="_blank">image source</a>';
+			return item.el.attr('title');
 		}
 	},
 	gallery: {
@@ -115,23 +115,23 @@ var handler = function () {
 	var viewport_height = viewport().height;
 
 	if (viewport_wid <= 991) {
-
+		/*$('.header').hide();*/
 	}
 
 }
 
 
 // слайдер (настройки тут http://kenwheeler.github.io/slick/)
-if ($('.main-slider').length) {
-	$('.main-slider').slick({
-		dots: true,
-		infinite: false,
+if ($('.slider-1').length) {
+	$('.slider-1').slick({
+		dots: false,
+		infinite: true,
 		arrows: true,
 		speed: 300,
-		slidesToShow: 4,
-		slidesToScroll: 4,
-		nextArrow: '<i class="fa fa-arrow-left slick-prev"></i>',
-		prevArrow: '<i class="fa fa-arrow-right slick-next"></i>',
+		slidesToShow: 3,
+		slidesToScroll: 1,
+		nextArrow: '<i class="fa fa-angle-right slick-next slick-arrow"></i></i>',
+		prevArrow: '<i class="fa fa-angle-left slick-prev slick-arrow"></i>',
 		responsive: [
 			{
 				breakpoint: 1024,
@@ -154,7 +154,7 @@ if ($('.main-slider').length) {
 
 
 // плавная прокрутка вниз к якорю
-$(".header nav ul li a").click(function () {
+$("#main-nav a, .header__middle .button").click(function () {
 	var elementClick = $(this).attr("href")
 	var destination = $(elementClick).offset().top;
 	jQuery("html:not(:animated),body:not(:animated)").animate({scrollTop: destination}, 800);
@@ -164,18 +164,20 @@ $(".header nav ul li a").click(function () {
 
 
 // тень от меню при прокрутке страницы больше чем 355px (можно делать липкий хедер)
-/*$(window).scroll(function () {
-	if ($(this).scrollTop() > 355) {
+$(window).scroll(function () {
+	if ($(this).scrollTop() > 620) {
 		$('.sticky-holder').addClass('fixed');
+		$('body').addClass('stickybody');
 	} else {
 		$('.sticky-holder').removeClass('fixed');
+		$('body').removeClass('stickybody');
 	}
-	if ($(this).scrollTop() > 255) {
+	if ($(this).scrollTop() > 590) {
 		$('.sticky-holder').addClass('fup');
 	} else {
 		$('.sticky-holder').removeClass('fup');
 	}
-});*/
+});
 
 
 
@@ -183,6 +185,17 @@ $(".header nav ul li a").click(function () {
 if ($(window).width() < 768) {
 	$('.crop-block').detach().insertAfter($('.after-block'));
 }
+
+/* tabs*/
+$('.tabs li a').click(function () {
+	$(this).parents('.tab-wrap').find('.tab-cont').addClass('hide-tab');
+	$(this).parent().siblings().removeClass('active');
+	var id = $(this).attr('href');
+	$(id).removeClass('hide-tab');
+	$(this).parent().addClass('active');
+	return false;
+});
+/* tabs*/
 
 
 
