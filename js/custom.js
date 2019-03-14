@@ -115,7 +115,7 @@ var handler = function () {
 	var viewport_height = viewport().height;
 
 	if (viewport_wid <= 991) {
-		/*$('.header').hide();*/
+		/*$('.crop-block').detach().insertAfter($('.after-block'));*/
 	}
 
 }
@@ -154,7 +154,7 @@ if ($('.slider-1').length) {
 
 
 // плавная прокрутка вниз к якорю
-$("#main-nav a, .header__middle .button").click(function () {
+$("#main-nav a, .header__middle .button, .go-genplan a").click(function () {
 	var elementClick = $(this).attr("href")
 	var destination = $(elementClick).offset().top;
 	jQuery("html:not(:animated),body:not(:animated)").animate({scrollTop: destination}, 800);
@@ -178,13 +178,6 @@ $(window).scroll(function () {
 		$('.sticky-holder').removeClass('fup');
 	}
 });
-
-
-
-// Если нужно при адаптации вырезать блок и вставит в другое место 
-if ($(window).width() < 768) {
-	$('.crop-block').detach().insertAfter($('.after-block'));
-}
 
 /* tabs*/
 $('.tabs li a').click(function () {

@@ -208,27 +208,25 @@ body.stickybody {
 	position: relative;
 	z-index: 2;
 	overflow: hidden;
+	height: 296px;
 }
 
 .tab-cont {
-	transition: .2s;
-	max-height: 400px;
+	transition: .4s;
+	/*max-height: 400px;*/
 }
 
 .hide-tab {
-	max-height: 0;
-	overflow: hidden;
+	/*max-height: 0;
+	transform: translateY(40px);
+	overflow: hidden;*/
 	z-index: -1;
 	opacity: 0;
 	visibility: hidden;
-	transform: translateY(-40px);
-	position: relative;
-}
-
-.crop-block {
-	padding: 22px;
-	border: 1px solid #f00;
-	margin: 22px;
+	position: absolute;
+	width: 100%;
+	top: 0;
+	left: 0;
 }
 
 //main styles end
@@ -286,6 +284,11 @@ body.stickybody {
 		.button {
 			width: 300px;
 			color: #fff;
+			/*&:hover {
+				-webkit-animation-name: pulsatebig;
+				-webkit-animation-duration: 2s;
+				-webkit-animation-iteration-count: infinite;
+			}*/
 
 			&.inverse {
 				color: #000;
@@ -487,7 +490,7 @@ section .h1 {
 	}
 
 	.img-box {
-		height: 86px;
+		height: 82px;
 		margin-bottom: 16px;
 		display: flex;
 		flex-direction: row;
@@ -517,7 +520,7 @@ section .h1 {
 	}
 
 	.text {
-		padding: 0 12px 46px;
+		padding: 0 12px 40px;
 		font-size: 15px;
 
 		span {
@@ -600,8 +603,8 @@ section .h1 {
 	color: #fff;
 
 	p {
-		font: 30px/35px 'CenturyGothic', sans-serif;
-		padding-bottom: 76px;
+		font: 30px/35px 'FuturaPTDemi', sans-serif;
+		padding-bottom: 55px;
 		text-align: center;
 	}
 
@@ -621,6 +624,10 @@ section .h1 {
 
 	h5 {
 		padding-bottom: 10px;
+	}
+	
+	.subtitle {
+		padding-bottom: 50px;
 	}
 }
 
@@ -695,6 +702,10 @@ section .h1 {
 	}
 }
 
+.gallery {
+	padding-bottom: 60px;
+}
+
 .tab-wrap {
 	ul {
 		margin: 0;
@@ -754,6 +765,75 @@ section .h1 {
 	}
 }
 
+.go-genplan {
+	text-align: center;
+	padding-bottom: 32px;
+	a {
+		display: inline-block;
+		position: relative;
+		font: 17px/23px 'FuturaPTDemi', sans-serif;
+		color: $brown;
+		text-decoration: none;
+		text-transform: uppercase;
+		&:after {
+			content: '';
+			display: block;
+			width: 24px;
+			height: 14px;
+			background: url(../img/arrows-down-brown.png) no-repeat;
+			position: absolute;
+			top: 100%;
+			left: 50%;
+			margin: 10px 0 0 -7px;
+		}
+	}
+}
+
+.genplan {
+	background: url(../img/genplan-1920.png) no-repeat center;
+	height: 1275px;
+	border-bottom: 9px solid #fff;
+	h2 {
+		padding-top: 40px;
+	}
+}
+
+.prefooter {
+	height: 585px;
+	background: url(../img/prefooter-bg.png) no-repeat center bottom;
+	.h1 {
+		&:after {
+			background-color: #fff;
+		}
+	}
+	.subtitle {
+		font: 17px/27px 'CenturyGothic', sans-serif;
+		padding-bottom: 52px;
+	}
+	&__form {
+		text-align: center;
+		.col {
+			display: block;
+			width: 100%;
+			padding-bottom: 10px;
+		}
+		input {
+			width: 430px;
+			border: 2px solid #1db243;
+		}
+		input[type=submit] {
+			background-color: #1db243;
+			font-size: 22px;
+			border: 2px solid #fff;
+		}
+		.rem {
+			font: 13px/15px 'CenturyGothic', sans-serif;
+			color: #fff;
+			padding: 14px 0;
+		}
+	}
+}
+
 /*
 ================================================================================
 |                                     CONTENT END                              |
@@ -768,13 +848,63 @@ section .h1 {
 */
 
 .footer {
-	background: #ff0;
-	height: 80px;
+	background: $brown;
 	text-align: left;
 	width: 100%;
 	min-width: $min-width;
 	order: 3;
 	-webkit-order: 3;
+	color: #fff;
+	padding: 42px 0 2px;
+	font: 16px/28px 'CenturyGothic', sans-serif;
+	a {
+		color: #fff;
+		text-decoration: none;
+	}
+}
+
+.copy {
+	padding-bottom: 22px;
+}
+
+.contacts {
+	padding-bottom: 22px;
+	ul {
+		margin: 0;
+		padding: 0;
+	}
+	li {
+		list-style: none;
+		padding: 0 0 8px 34px;
+		line-height: 24px;
+		&:nth-child(1) {
+			background: url(../img/phone-footer.svg) no-repeat 2px 4px;
+		}
+		&:nth-child(2) {
+			background: url(../img/email.svg) no-repeat 1px 7px;
+		}
+		&:nth-child(3) {
+			background: url(../img/map.svg) no-repeat 0 4px;
+		}
+	}
+}
+
+.social {
+	width: 200px;
+	margin: 0 0 20px auto;
+	.title {
+		text-transform: uppercase;
+		padding-bottom: 14px;
+	}
+	ul {
+		margin: 0;
+		padding: 0;
+	}
+	li {
+		list-style: none;
+		display: inline-block;
+		padding: 0 2px 2px 0;
+	}
 }
 
 
